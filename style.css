@@ -1,0 +1,295 @@
+/* Global style rules */
+body{
+    font-family: 'Mulish', sans-serif;
+    margin:0;
+    padding: 8px 20px;
+}
+
+@media screen and (min-width: 992px){
+    body{
+        padding: 8px 135px; 
+    }
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+/* Mobile navbar */
+.mobile-nav .site-name{
+    color: #131318;
+    font-size: 21px;
+    font-weight: 800;
+    margin: 0;
+}
+.mobile-nav .site-name span{
+    color: #FF5400;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+}
+.mobile-nav{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-nav img{
+    height: 32px;
+    margin-right: 8px
+}
+.mobile-nav .logo-container{
+    display: flex;
+    align-items: center;
+}
+@media screen and (min-width: 992px){
+    .mobile-nav{
+        display: none;
+    }
+}
+
+/* Desktop menu */
+.navbar{
+    display: none;
+}
+.navbar .logo-container{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.navbar .logo-container img{
+    height: 42px;
+}
+.navbar p{
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0;
+}
+.navbar p span{
+    color: #FF5400;
+}
+.nav-items{
+    display: flex;
+    justify-content: right;
+}
+.main-menu{
+    text-align: right;
+}
+.nav-items ul,li{
+    /* margin: 0;
+    padding: 0; */
+    list-style: none;
+}
+.nav-items ul li{
+
+}
+.nav-items li a{
+    display: inline-block;
+    padding: 10px 18px;
+    color: #424247;
+    font-size: 18px;
+    font-weight: 400;
+}
+@media screen and (max-width: 1200px){
+    .navbar p{
+        font-size: 20px;
+    }
+    .navbar .logo-container img{
+        height: 24px;
+    }
+    .navbar .logo-container{
+        gap: 8px;
+    }
+    .nav-items li a{
+        padding: 10px 12px;
+    }
+}
+@media screen and (min-width: 992px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+/* Header =============== */
+#header{
+    background-color: red;
+    background-image: url('./images/header-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 32px 16px;
+    text-align: center;
+    max-width: 450px;
+    border-radius: 16px;
+    position: relative;
+    margin: auto;
+    margin-top: 12px;
+
+}
+#header * {
+    position: relative;
+    z-index: 99;
+}
+#header .header-overlay{
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+#header h3{
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+#header p{
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.header-form-container{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+}
+.header-form-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.header-form-container form input,select{
+    height: 54px;
+    border-radius: 8px;
+    border: none;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+}
+.header-form-container form input::placeholder{
+    padding: 16px;
+}
+.header-form-container form select{
+    padding: 16px;
+    padding-right: 16px;
+}
+.header-form-container button{
+    background-color: #FF5400;
+    color: #fff;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 8px;
+}
+.header-form-container button i{
+    margin-right: 8px;
+}
+
+@media screen and (min-width:992px){
+    #header{
+        max-width: 100%;
+        padding: 135px;
+    }
+    .header-form-container{
+        display: inline-block;
+    }
+    .header-form-container form{
+        display: inline-flex;
+        flex-direction: row;
+        gap: 24px;
+        justify-content: center;
+        padding: 16px;
+        flex-wrap: wrap;
+    }
+    .header-form-container form > * {
+        width: 174px;
+    }
+    #header h3{
+    font-size: 64px;
+    }
+    #header p{
+        font-size: 16px;
+        
+    }
+}
+
+/* Popular tours */
+#popular-tours{
+    margin-top: 36px;
+}
+#popular-tours h3{
+    color: #131318;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+.popular-tour-content{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.popular-tour-content ul{
+    margin: 0;
+}
+.popular-tour-content ul li{
+    list-style: initial;
+    margin-bottom: 12px;
+}
+button{
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.popular-tour-img-container{
+    margin-top: 24px;
+    width: 100%;
+}
+.popular-tour-img-container img{
+    width: 100%;
+}
+
+@media screen and (min-width: 992px){
+    #popular-tours{
+        margin-top: 64px;
+    }
+    #popular-tours h3{
+        font-size: 40px;
+        text-align: left;
+        margin: 0;
+    }
+    .popular-tour-container{
+        display: flex;
+    }
+    .popular-tour-container > * {
+        width: 50%;
+        padding: 0 10px;
+    }
+    .popular-tour-container img{
+        width: 100%;
+    }
+    .popular-tour-content p,li{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
